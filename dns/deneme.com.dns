@@ -1,0 +1,25 @@
+{
+  "zone": "deneme.com.",
+  "serial": 2025103001,
+  "ttl_default": 300,
+  "soa": {
+    "mname": "ns1.deneme.com.",
+    "rname": "hostmaster.deneme.com.",
+    "refresh": 3600,
+    "retry": 600,
+    "expire": 604800,
+    "negative_ttl": 300
+  },
+  "ns": ["ns1.deneme.com.", "ns2.deneme.com."],
+  "records": [
+    { "name": "@",   "type": "A",     "ttl": 300,  "values": ["203.0.113.10"] },
+    { "name": "www", "type": "CNAME", "ttl": 300,  "value": "@" },
+    { "name": "@",   "type": "MX",    "ttl": 600,  "values": [{"preference":10,"host":"mail.deneme.com."}]},
+    { "name": "mail","type": "AAAA",  "ttl": 300,  "values": ["2001:db8::10"] },
+    { "name": "_dmarc","type":"TXT",  "ttl": 3600, "values": ["v=DMARC1; p=reject"] },
+    { "name": "*",   "type": "A",     "ttl": 60,   "values": ["203.0.113.20"] },
+    { "name": "_sip._tcp","type":"SRV","ttl":300,  "values":[{"priority":10,"weight":5,"port":5060,"target":"sip.deneme.com."}]}
+  ]
+}
+
+

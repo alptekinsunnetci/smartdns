@@ -1,0 +1,21 @@
+{
+  "zone": "merhaba.net.",
+  "serial": 2025103001,
+  "ttl_default": 300,
+  "soa": {
+    "mname": "ns1.merhaba.net.",
+    "rname": "hostmaster.merhaba.net.",
+    "refresh": 3600,
+    "retry": 600,
+    "expire": 604800,
+    "negative_ttl": 300
+  },
+  "ns": ["ns1.merhaba.net.", "ns2.merhaba.net."],
+  "records": [
+    { "name": "@",   "type": "A",     "ttl": 300,  "values": ["198.51.100.5"] },
+    { "name": "api", "type": "A",     "ttl": 300,  "values": ["198.51.100.6"] },
+    { "name": "www", "type": "CNAME", "ttl": 300,  "value": "@" }
+  ]
+}
+
+
