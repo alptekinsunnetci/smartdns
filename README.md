@@ -71,7 +71,7 @@ Requirements: Go 1.22+
 
 Clone and build:
 ```bash
-git clone https://example.com/smart-dns.git
+git clone https://github.com/alptekinsunnetci/smartdns/smartdns.git
 cd smart-dns
 go build -trimpath -ldflags "-s -w" -o bin/smart-dns ./cmd/smart-dns
 ```
